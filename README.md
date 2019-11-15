@@ -1,0 +1,2 @@
+# ioBroker.EigeneDatenpunkte
+# ioBroker.EigeneDatenpunkte
