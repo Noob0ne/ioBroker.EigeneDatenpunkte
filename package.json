@@ -1,22 +1,4 @@
 {
   "name": "iobroker.EigeneDatenpunkte",
-  "description": "Erstelle deine eigenen Datenpunkte",
-  "version": "0.0.1",
-  "contributors": [
-    "Noob0ne"
-  ],
-  "homepage": "https://github.com/ioBroker/ioBroker.EigeneDatenpunkte",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ioBroker/ioBroker.EigeneDatenpunkte"
-  },
-  "dependencies": {
-    "xml2js": "^0.4.19",
-    "@iobroker/adapter-core": "^1.0.3"
-  },
-  "bugs": {
-    "url": "https://github.com/ioBroker/ioBroker.EigeneDatenpunkte/issues"
-  },
-  "main": "main.js",
-  "author": "Noob0ne",
+  "version": "0.0.1"
 }
