@@ -14,4 +14,4 @@ const adapter = utils.Adapter({
 adapter.on('ready', main);
 
 function main() {
-}
+};
