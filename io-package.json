@@ -1,54 +1,97 @@
 {
-    "common": {
-        "name":                     "EigeneDatenpunkte",
-        "version": "0.0.1",
-        "title":                    "EigeneDatenpunkte",
-        "titleLang":  {
-            "en": "yr.no weather",
-            "de": "yr.no Wetter",
-            "ru": "yr.no погода",
-            "pt": "yr.no tempo",
-            "nl": "yr.nr weer",
-            "fr": "yr.no météo",
-            "it": "anno vecchio",
-            "es": "yr.no tiempo",
-            "pl": "yr.no pogody"
+	"common": {
+		"name": "eigene_datenpunkte",
+		"version": "0.0.3",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "EigeneDatenpunkte",
+		"titleLang": {
+			"en": "EigeneDatenpunkte",
+			"de": "EigeneDatenpunkte",
+			"ru": "EigeneDatenpunkte",
+			"pt": "EigeneDatenpunkte",
+			"nl": "EigeneDatenpunkte",
+			"fr": "EigeneDatenpunkte",
+			"it": "EigeneDatenpunkte",
+			"es": "EigeneDatenpunkte",
+			"pl": "EigeneDatenpunkte",
+			"zh-cn": "EigeneDatenpunkte"
+		},
+		"desc": {
+			"en": "verwalten von eigenen Datenpunkten",
+			"de": "verwalten von eigenen Datenpunkten",
+			"ru": "Verwalten Von Eigenen Datenpunkten",
+			"pt": "verwalten von eigenen Datenpunkten",
+			"nl": "verwalten von eigenen Datenpunkten",
+			"fr": "verwalten von eigenen Datenpunkten",
+			"it": "verwalten von eigenen Datenpunkten",
+			"es": "verwalten von eigenen Datenpunkten",
+			"pl": "verwalten von eigenen Datenpunkten",
+			"zh-cn": "Verwalten von Eigenen Datenpunkten"
+		},
+		"authors": [
+			"Noob0ne <git@felixxroth.de>"
+		],
+		"keywords": [
+			"ioBroker",
+			"template",
+			"Smart Home",
+			"home automation"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "eigene_datenpunkte.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/Noob0ne/ioBroker.eigene_datenpunkte/master/admin/eigene_datenpunkte.png",
+		"readme": "https://github.com/Noob0ne/ioBroker.eigene_datenpunkte/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "schedule",
+		"schedule": "0 5 1 * *",
+		"type": "storage",
+		"compact": true,
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=1.4.2"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+ 	{
+            "_id": "Lichtsteuerung",
+            "type": "channel",
+            "common": {
+                "name":  "Lichtsteuerung",
+                "role":  "Licht"
+            },
+            "native": {}
         },
-        "desc":                     {
-            "en": "Fetches 48h weather forecast from yr.no",
-            "de": "Holt 48h Wettervorhersage von yr.no",
-            "ru": "Получает прогноз погоды на 48h с yr.no",
-            "pt": "Fetches 48h previsão do tempo a partir de yr.no",
-            "nl": "Haal 48h weersvoorspelling op van yr.no",
-            "fr": "Fetchs 48h météo de yr.no",
-            "it": "Calcola le previsioni del tempo a 48 ore dall'anno n",
-            "es": "Obtiene 48h pronóstico del tiempo de yr.no",
-            "pl": "Pobiera 48-godzinną prognozę pogody z yr.no"
-        },
-        "license":                  "MIT",
-        "platform":                 "Javascript/Node.js",
-        "mode":                     "schedule",
-        "schedule":                 "6 * * * *",
-        "enabled":                  true,
-        "loglevel":                 "info",
-        "materialize":              true,
-        "keywords":                 ["weather", "forecast", "temperature", "rain", "yr", "meteorology"],
-        "main":                     "main.js",
-        "icon":                     "settings.png",
-        "extIcon":                  "https://raw.githubusercontent.com/ioBroker/ioBroker.yr/master/admin/yr.png",
-        "readme":                   "https://github.com/ioBroker/ioBroker.yr/blob/master/README.md",
-		"allowInit":                true,
-		"type":                     "general"
-    },
-    "native": {
-        "location": "",
-        "language": "",
-        "sendTranslations": true,
-        "nonMetric": false
-    },
-    "objects": [
-
-    ],
-    "instanceObjects": [
- ],
+ 	{
+            "_id": "Heizungssteuerung",
+            "type": "channel",
+            "common": {
+                "name":  "Heizungssteuerung",
+                "role":  "Heizen"
+            },
+            "native": {}
+        }
+	]
 }
